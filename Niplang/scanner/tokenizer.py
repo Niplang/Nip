@@ -1,5 +1,5 @@
 # Author: Pavan D Umesh
-## https://github.com/Pavan2027
+# https://github.com/Pavan2027
 
 value_keywords = (
     "true",
@@ -14,7 +14,7 @@ control_flow_keywords = (
     "case"
 )
 
-iteration_keyworkds = (
+iteration_keywords = (
     "for",
     "do",
     "while",
@@ -73,7 +73,7 @@ logical_operator_keywords = (
     "&&",
     "||",
     "!",
-    "->", # Equivalent to 'in' keyword in python
+    "->",  # Equivalent to 'in' keyword in python
 )
 
 arithmetic_operators = (
@@ -120,7 +120,6 @@ bitwise_operators = (
 
 whitespace = ' '
 
-def token(str):
-    # Need to implement the return of lexer
-    lexeme = ()
-    return lexeme
+
+def token():
+    pass
