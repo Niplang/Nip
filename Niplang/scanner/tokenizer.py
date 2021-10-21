@@ -16,7 +16,7 @@ control_flow_keywords = (
 
 iteration_keywords = (
     "for",
-    "do",
+    "do",  # do-while loop
     "while",
     "break",
     "continue",
@@ -24,24 +24,25 @@ iteration_keywords = (
 
 structure_keywords = (
     "struct",
-    "func",
+    "func",  # Function
     "class",
-    "abs",
+    "abs",  # Abstract keyword
     "new",
-    "interface"
+    "interface"  # Can delete it later
     "inherits",
     "implements",
     "return",
 )
 
 access_specifiers = (
-    "priv",
-    "pub",
+    "priv",  # Private access specifier
+    "pub",  # Public access specifier
     "protected",
 )
 
 import_keywords = (
     "import",
+    # Need to implement other importing keywords / Namespaces
 )
 
 exception_keywords = (
@@ -54,8 +55,9 @@ exception_keywords = (
 
 variable_specifiers = (
     "static",
-    "const",
-    "var",
+    "const",  # Constant keyword
+    "var",  # Variable keyword
+    "unsigned",
 )
 
 variable_types = (
@@ -64,6 +66,7 @@ variable_types = (
     "long",
     "float",
     "double",
+    "complex",  # For complex numbers
     "char",
     "str",
     "void",
@@ -82,7 +85,7 @@ arithmetic_operators = (
     "*",
     "/",
     "%",
-    "pow",
+    "pow",  # Exponents
 )
 
 assignment_operators = (
@@ -121,5 +124,7 @@ bitwise_operators = (
 whitespace = ' '
 
 
+# Function to return the lexeme
 def token():
+    # TODO
     pass
