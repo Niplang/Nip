@@ -25,10 +25,11 @@ iteration_keywords = (
 structure_keywords = (
     "struct",
     "func",  # Function
+    "main",  # Warning: For the main function, might delete later
     "class",
     "abs",  # Abstract keyword
     "new",
-    "interface"  # Can delete it later
+    "interface"  # Can delete it later. Might merge abstract
     "inherits",
     "implements",
     "return",
@@ -37,7 +38,7 @@ structure_keywords = (
 access_specifiers = (
     "priv",  # Private access specifier
     "pub",  # Public access specifier
-    "protected",
+    "prot", # Protected access specifier
 )
 
 import_keywords = (
@@ -55,6 +56,7 @@ exception_keywords = (
 
 variable_specifiers = (
     "static",
+    "final",
     "const",  # Constant keyword
     "var",  # Variable keyword
     "unsigned",
@@ -72,7 +74,7 @@ variable_types = (
     "void",
 )
 
-logical_operator_keywords = (
+logical_operators = (
     "&&",
     "||",
     "!",
@@ -85,7 +87,12 @@ arithmetic_operators = (
     "*",
     "/",
     "%",
-    "pow",  # Exponents
+)
+
+string_operators = (
+    "\"\"",
+    "\'\'",
+    "\'\'\'",
 )
 
 assignment_operators = (
@@ -95,7 +102,6 @@ assignment_operators = (
     "*=",
     "/=",
     "%=",
-    "pow=",
     "&=",
     "|=",
     "^=",
@@ -125,6 +131,6 @@ whitespace = ' '
 
 
 # Function to return the lexeme
-def token():
+def lexeme():
     # TODO
     pass
